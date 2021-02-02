@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello From Flask</title>
+    <script src="/static/main.js"></script>
+ <link rel="stylesheet" href="/static/hello.css" />
+{% if name %}
+</head>
+<body>
+
+<h1>Hello {{ name}}!</h1>
+ <div class="topnav">
+  <a class="active" href="/">index</a>
+  <a href="/about/">About</a>
+  <a href="#contact">Portfolio</a>
+  <a href="#about">About</a>
+</div>
+{% else %}
+<h1>Hello, world!</h1>
+ <div class="topnav">
+  <a class="active" href="templates/index.html">Index</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+{% endif %}
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/static/hello.css" />
+</head>
+<body>
+<h1>Welcome To Contact</h1>
+<div class="topnav">
+  <a href="/">index</a>
+  <a href="/about/">About</a>
+  <a href="/portfolio/">Portfolio</a>
+  <a href="/contact/" class="active">Contact</a>
+</div>
+<form action="/send-email/" method="post" id="email_form">
+    <h3>Enter your emailll</h3>
+    <input type="text" id="email_add" name="email_add">
+    <h3>Enter Your password</h3>
+    <input type="text" id="user_psswd" name="user_psswd">
+    <h3>Subject</h3>
+        <input type="text" id="sub" name="sub">
+    <h3>Message</h3>
+    <input name="mes" type="text">
+    <br><br><br><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
