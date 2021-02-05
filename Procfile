@@ -1,1 +1,0 @@
-web: gunicorn render_temp:app
